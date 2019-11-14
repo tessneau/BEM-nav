@@ -1,0 +1,42 @@
+.nav {
+  padding: 1em;
+  background: lightblue;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &__title {
+  color: brown;
+  }
+
+  &__list {
+  list-style-type: none;
+  display: flex;
+  width: 70%;
+  text-align: center;
+  justify-content: space-around;
+  }
+
+  &__item {
+  flex-grow: 1;
+  padding: 1em;
+  background: maroon;
+  transition: 0.5s background ease;
+  cursor: pointer;
+
+    &:hover {
+    background: red;
+    }
+  }
+
+  &__item--selected {
+  background: purple;
+  }
+
+  &__link {
+  text-decoration: none;
+  font-size: 17px;
+  color: white;
+  }
+  
+}
